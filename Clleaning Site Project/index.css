@@ -1,0 +1,381 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: #f9f9f9;
+    color: #333;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    min-height: 400px;
+    max-height: 800px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero picture,
+.hero .hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+
+.hero p {
+    font-size: 1.25rem;
+    margin-bottom: 1.2rem;
+}
+
+.hero-button {
+    background-color: #0a74da;
+    color: white;
+    text-decoration: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+    display: inline-block;
+    margin-top: 1.5rem;
+    /* ✅ This adds space between the paragraph and the button */
+}
+
+.hero-button:hover {
+    background-color: #004f9e;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-content {
+        padding: 1rem;
+    }
+}
+
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+header {
+    background: #0a75ad;
+    color: white;
+    padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: #e3f2fd;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.hero h2 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background: #0a75ad;
+    color: white;
+    padding: 12px 24px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#services,
+#about,
+#contact {
+    background: white;
+    margin-top: 20px;
+    padding: 40px 20px;
+}
+
+.services-list {
+    list-style: none;
+    margin-top: 15px;
+}
+
+.services-overview {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: #f8f9fa;
+    border-radius: 16px;
+    max-width: 1200px;
+    margin: 2rem auto;
+}
+
+.services-text {
+    flex: 1 1 300px;
+}
+
+.services-text h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0a74da;
+}
+
+.services-text ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 1.5rem;
+}
+
+.services-text ul li {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    line-height: 1.4;
+}
+
+.view-all-button {
+    display: inline-block;
+    background-color: #0a74da;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.view-all-button:hover {
+    background-color: #004f9e;
+}
+
+.services-image {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.services-image img {
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.why-choose-us {
+    padding: 3rem 1.5rem;
+    background-color: #ffffff;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.why-choose-us h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #0a74da;
+}
+
+.why-intro {
+    font-size: 1.1rem;
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 2rem;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+.why-card {
+    background-color: #f3f6fb;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.why-card h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #0a74da;
+}
+
+.why-card p {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.testimonials {
+    background-color: #f9fbfc;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials h2 {
+    font-size: 2rem;
+    color: #0a74da;
+    margin-bottom: 2rem;
+}
+
+.testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.testimonial-card {
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    text-align: left;
+    position: relative;
+}
+
+.testimonial-card .quote {
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 0.75rem;
+}
+
+.testimonial-card .details {
+    font-size: 1rem;
+    color: #444;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+.testimonial-card .author {
+    font-weight: bold;
+    color: #333;
+    font-size: 0.95rem;
+}
+
+.testimonial-card .stars {
+    color: #ffc107;
+    font-size: 1rem;
+    margin-left: 0.3rem;
+}
+
+.cta-banner {
+    background-color: #0a74da;
+    color: white;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.cta-content h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+.cta-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1.5rem;
+}
+
+.cta-button {
+    background-color: white;
+    color: #0a74da;
+    padding: 0.75rem 1.5rem;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e2e8f0;
+}
+
+.service-area {
+    background-color: #f3f6fb;
+    color: #0a74da;
+    padding: 1rem 2rem;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border-top: 2px solid #e0e0e0;
+    border-bottom: 2px solid #e0e0e0;
+    margin-top: 2rem;
+}
+
+.service-area strong {
+    color: #0a4ea1;
+}
+
+.services-list li {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+}
+
+footer {
+    background: #0a75ad;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}

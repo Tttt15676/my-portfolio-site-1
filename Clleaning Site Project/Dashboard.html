@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles/dashboard.css" />
+</head>
+
+<body>
+    <header>
+        <h1>Admin Dashboard</h1>
+        <button id="logoutBtn">Logout</button>
+    </header>
+
+    <main>
+        <section class="appointments">
+            <h2>Upcoming Appointments</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Service</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Contact</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="appointmentTable">
+                    <!-- Appointments will be inserted here dynamically -->
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>Deep Cleaning</td>
+                        <td>2025-05-23</td>
+                        <td>10:00 AM</td>
+                        <td>jane@example.com</td>
+                        <td>
+                            <button class="confirm">Confirm</button>
+                            <button class="cancel">Cancel</button>
+                        </td>
+                    </tr>
+                    <!-- Additional rows go here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="scripts/dashboard.js"></script>
+</body>
+
+</html>
