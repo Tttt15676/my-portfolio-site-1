@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "../Games Imma Make For Fun"
+		},
+		{
+			"path": "../Games Imma Make For Fun/.venv/Sweet Bakery"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Clleaning Site Project"
+	}
+}
